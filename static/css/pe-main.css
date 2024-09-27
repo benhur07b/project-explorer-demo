@@ -1,0 +1,102 @@
+#pe-map {
+    height: 100vh;
+    overflow: auto;
+}
+
+#left-panel {
+    height: 100vh;
+    overflow: auto;
+}
+
+#right-panel {
+    height: 100vh;
+    overflow: auto;
+    z-index: 9;
+}
+
+#show-right-panel-btn {
+    z-index: 10;
+}
+
+#legend {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 18px;
+    height: 150px;
+    margin-bottom: 40px;
+    width: 100px;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+/* #select {
+    height: 100vh;
+    overflow: auto;
+}
+
+#features {
+    top: 0;
+    height: 100px;
+    margin-top: 20px;
+    width: 250px;
+}
+   */
+
+
+#listings {
+/* height: 55vh; */
+/* max-height: 720px; */
+max-height: 80vh;
+overflow: auto;
+border: 2px solid #006196;
+margin-right: 0.5em;
+}
+
+.listings .item {
+    border-bottom: 1px dashed #3f3f3faa;
+    text-decoration: none;
+    padding: 0.3em 0.6em;
+    color: #006196;
+}
+
+.listings .item:last-child { border-bottom: none; }
+
+.listings .item .title {
+    margin-bottom: 0px;
+    padding-top: 4px;
+    color: #00853e;
+    font-weight: 700;
+}
+
+.listings .item.active .title,
+.listings .item .title:hover { color: #8cc63f; }
+
+.listings .item.active {
+    background-color: #f8f8f8;
+}
+
+/* ::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00853e;
+    border-radius: 0;
+} */
+
+.accordion-button {
+    padding: 0.6em;
+}
