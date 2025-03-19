@@ -1259,7 +1259,7 @@ const searchInput = document.getElementById('search-input'); // Replace with you
 // const peData = map.getSource('pe-data')._data;
 
 searchInput.addEventListener('input', (event) => {
-    const peData = '../data/pe-data.geojson';
+    const peData = 'data/pe-data.geojson';
     const searchText = event.target.value.trim(); // Get the search text
     // const featureCollection = turf.featureCollection(geojsonData.features);
 
