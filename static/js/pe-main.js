@@ -680,7 +680,7 @@ map.on('load', () => {
 
 
 // function getOverlappingPoints() {
-//     // const peData = '../data/pe-data.geojson';
+//     // const peData = 'data/pe-data.geojson';
 //     const peData = map.getSource('pe-data')._data;
 //     fetch(peData)
 //     .then((response) => response.json())
@@ -808,7 +808,7 @@ function updateCluster(thismap, visibility, filter) {
 
     thismap.addSource('pe-data-cluster', {
         'type': 'geojson',
-        'data': '../data/pe-data.geojson',
+        'data': 'data/pe-data.geojson',
         // 'filter':,
         'filter': filter,
         'cluster': true,
@@ -928,7 +928,7 @@ function onFilterChange() {
 
         // map.addSource('pe-data-cluster', {
         //     'type': 'geojson',
-        //     'data': '../data/pe-data.geojson',
+        //     'data': 'data/pe-data.geojson',
         //     // 'filter':,
         //     'filter':  ['all', 
         //     ['in', ['get', 'DMC'], ['literal', dmc_exp]], ['in', ['get', 'SECTOR'], ['literal', sector_exp]], ['in', ['get', 'PROJ_STATUS'], ['literal', project_status_exp]], ['in', ['get', 'YEAR_APPROVAL'], ['literal', year_exp]],],
@@ -985,7 +985,7 @@ function resetFilter() {
 
 // FLY TO FILTER
 function flyToProjects() {
-    const peData = '../data/pe-data.geojson';
+    const peData = 'data/pe-data.geojson';
     // const peData = map.getSource('pe-data')._data;
     var selected = getFilterSelected();
     var dmc_exp = generateFilter(selected.dmc, OPTS.dmc, 'country');
@@ -1239,7 +1239,7 @@ clusterBtn.onclick = function () {
 
         // map.addSource('pe-data-cluster', {
         //     'type': 'geojson',
-        //     'data': '../data/pe-data.geojson',
+        //     'data': 'data/pe-data.geojson',
         //     // 'filter':,
         //     'filter':  ['all', 
         //     ['in', ['get', 'DMC'], ['literal', dmc_exp]], ['in', ['get', 'SECTOR'], ['literal', sector_exp]], ['in', ['get', 'PROJ_STATUS'], ['literal', project_status_exp]], ['in', ['get', 'YEAR_APPROVAL'], ['literal', year_exp]],],
@@ -1302,7 +1302,7 @@ const searchProjectNo = document.getElementById('search-project-no'); // Replace
 // const peData = map.getSource('pe-data')._data;
 
 searchProjectNo.addEventListener('input', (event) => {
-    const peData = '../data/pe-data.geojson';
+    const peData = 'data/pe-data.geojson';
     const searchText = event.target.value.trim(); // Get the search text
     // const featureCollection = turf.featureCollection(geojsonData.features);
 
@@ -1342,7 +1342,7 @@ searchProjectNo.addEventListener('input', (event) => {
 
 // GET FILTERED DATA
 function getFilteredData() {
-    // const peData = '../data/pe-data.geojson';
+    // const peData = 'data/pe-data.geojson';
     const peData = map.getSource('pe-data')._data;
     var selected = getFilterSelected();
     var dmc_exp = generateFilter(selected.dmc, OPTS.dmc, 'country');
@@ -1375,7 +1375,7 @@ function getFilteredData() {
 
 // UPDATE PROJECT COUNT LABELS
 function updateCountLabels() {
-    const peData = '../data/pe-data.geojson';
+    const peData = 'data/pe-data.geojson';
     // const peData = map.getSource('pe-data')._data;
     var selected = getFilterSelected();
     var dmc_exp = generateFilter(selected.dmc, OPTS.dmc, 'country');
