@@ -464,13 +464,13 @@ map.on('load', () => {
 
     map.addSource('pe-data', {
         'type': 'geojson',
-        'data': '../data/pe-data.geojson' + uniqueQueryParam,
+        'data': '/data/pe-data.geojson' + uniqueQueryParam,
         'promoteId': 'id'
     });
 
     map.addSource('pe-data-cluster', {
         'type': 'geojson',
-        'data': '../data/pe-data.geojson' + uniqueQueryParam,
+        'data': '/data/pe-data.geojson' + uniqueQueryParam,
         'cluster': true,
         'clusterMaxZoom': 15, // Max zoom to cluster points on
         'clusterRadius': 50, // Radius of each cluster when clustering points (defaults to 50)
